@@ -1,5 +1,7 @@
 module RedisC [system] {
+    header "RedisWrapper/redis_wrapper.h"
     header "/usr/local/include/hiredis/hiredis.h"
+    link "swiftredis"
     link "hiredis"
     export *
 }
